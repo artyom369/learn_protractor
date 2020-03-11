@@ -19,5 +19,16 @@ let userpage = function(){
 
     this.viewItemClick = function(itemClick){
         view_profile_item.click(itemClick);
+        console.log('423423423423');
     }
+
+// return {
+//         viewItemClick() {
+//             view_profile_item.click(itemClick);
+//         },
+//         dropDownClick() {
+
+//         }
+
+//     }
 };
