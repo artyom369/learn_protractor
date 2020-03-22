@@ -96,6 +96,7 @@ describe('tests for Login and Profile pages', function() {
     profileData['support_pin'] = userprofilepage.getSupportPinValue();
     profileData['newsletter'] = userprofilepage.getNewsletterValue();
 
+
     userpage.dropDownClick();
     userpage.logoutItemClick();
 
@@ -124,7 +125,7 @@ describe('tests for Login and Profile pages', function() {
     expect(profileData['phone']).toEqual(userprofilepage.getPhoneValue());
     expect(profileData['address']).toEqual(userprofilepage.getAddressValue());
     expect(profileData['support_pin']).toEqual(userprofilepage.getSupportPinValue());
-    expect(profileData['newsletter']).toEqual(userprofilepage.getNewsletterValue());
+    expect(profileData['newsletter']).toBe(true);
 
   });
 

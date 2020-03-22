@@ -1,6 +1,6 @@
 const userpage = function(){
 
-    const user_button = element(by.css('[href="/user/bundles"]'));
+    const user_button = $('.log-box [class="btn btn-s round filled user-btn ng-binding"]');
     const drop_down_button = element(by.css('button[nc-dropdown-trigger="statusOpened"]'));
     const view_profile_item = element(by.css('[href="/user/profile"]'));
     const logout_item = element(by.css('[ng-click="$ctrl.logout()"]'));
