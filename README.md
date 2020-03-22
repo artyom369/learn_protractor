@@ -1,5 +1,5 @@
 
-## Instruction how to build and run this project.
+#### Instruction how to build and run this project.
 
 ###### - install Visual Studio Code
 ###### - install Node.js and npm (comes with Node.js)
@@ -8,11 +8,8 @@
 	 - npm install -g protractor
 	 - webdriver-manager update
 	 - webdriver-manager start
-
-## To download and run the project to VS Code.
-
+#### To download and run the project to VS Code.
 ###### - use the terminal to enter the following command:
-	###### git clone https://github.com/artyom369/learn_protractor.git 
-
+	 git clone https://github.com/artyom369/learn_protractor.git 
 ###### - to run tests use the command:
-	###### - protractor conf.js
+	- protractor conf.js
