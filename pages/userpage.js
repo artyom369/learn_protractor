@@ -1,29 +1,29 @@
 const userpage = function(){
 
-    const user_button = $('.log-box [class="btn btn-s round filled user-btn ng-binding"]');
-    const drop_down_button = element(by.css('button[nc-dropdown-trigger="statusOpened"]'));
-    const view_profile_item = element(by.css('[href="/user/profile"]'));
-    const logout_item = element(by.css('[ng-click="$ctrl.logout()"]'));
+    const userButton = $('.log-box [class="btn btn-s round filled user-btn ng-binding"]');
+    const dropDownButton = $('button[nc-dropdown-trigger="statusOpened"]');
+    const viewProfileItem = $('[href="/user/profile"]');
+    const logoutItem = $('[ng-click="$ctrl.logout()"]');
 
 
-    this.checkUserButton = function(){
-        expect(user_button.isPresent()).toBe(true);
+    this.checkIsUserButtonAppear = function(){
+        expect(userButton.isPresent()).toBe(true);
     };
     // OR
-    this.checkUserButtonEmailText = function(emailText){
-        expect(user_button.getText()).toEqual(emailText);
+    this.checkIsUserButtonEmailTextDisplay = function(emailText){
+        expect(userButton.getText()).toEqual(emailText);
     };
     
     this.dropDownClick = function(){
-        drop_down_button.click();
+        dropDownButton.click();
     };
     
     this.viewProfileItemClick = function(){
-        view_profile_item.click();
+        viewProfileItem.click();
     };
 
     this.logoutItemClick = function(){
-        logout_item.click();
+        logoutItem.click();
     };
 
 };
