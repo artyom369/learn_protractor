@@ -9,31 +9,38 @@ const userprofilepage = function(){
     const newsletterItem = $('[ng-class="{disabled: activeRow !== \'newsletter\' && activeRow !== \'all\'}"] input[name="newsletterOn"]');
     
     this.getNameValue = function(){
+        
         return nameItem.getText();
     };
 
     this.getEmailValue = function(){
+        
         return emailItem.getText();
     };
 
     this.getPasswordValue = function(){
+        
         return passwordItem.getText();
     };
 
     this.getPhoneValue = function(){
+        
         return phoneItem.getText();
     };
 
     this.getAddressValue = function(){
+        
         return addressItem.getText();
     };
 
     this.getSupportPinValue = function(){
+        
         return supportPinItem.getText();
     };
 
     this.getNewsletterValue = function(){
-       return newsletterItem.isSelected();
+       
+        return newsletterItem.isSelected();
     };
         
 };

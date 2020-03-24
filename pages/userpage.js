@@ -7,22 +7,27 @@ const userpage = function(){
 
 
     this.checkIsUserButtonAppear = function(){
+        
         return userButton.isPresent();
     };
     // OR
     this.checkIsUserButtonEmailTextDisplay = function(){
+        
         return userButton.getText();
     };
     
     this.dropDownClick = function(){
+        
         dropDownButton.click();
     };
     
     this.viewProfileItemClick = function(){
+       
         viewProfileItem.click();
     };
 
     this.logoutItemClick = function(){
+        
         logoutItem.click();
     };
 
