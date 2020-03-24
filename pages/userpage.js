@@ -7,11 +7,11 @@ const userpage = function(){
 
 
     this.checkIsUserButtonAppear = function(){
-        expect(userButton.isPresent()).toBe(true);
+        return userButton.isPresent();
     };
     // OR
-    this.checkIsUserButtonEmailTextDisplay = function(emailText){
-        expect(userButton.getText()).toEqual(emailText);
+    this.checkIsUserButtonEmailTextDisplay = function(){
+        return userButton.getText();
     };
     
     this.dropDownClick = function(){
